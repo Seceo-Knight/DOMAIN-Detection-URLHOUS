@@ -1,10 +1,21 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \uc0\u55357 \u56522  ARCHITECTURE (Updated)}
+📊 ARCHITECTURE
+```
+         ↓
+Update Script (Every 30 minutes)
+         ├─ Download & Extract
+         ├─ Filter Whitelist
+         ├─ Deduplicate
+         └─ Deploy to SeceoKnight
+         ↓
+SeceoKnight Domain Blacklist (12K+ unique entries)
+         ↓
+Detection Rule 100702 (DNS Detection)
+         ├─ Sysmon Event 22: DNS Query
+         └─ Match against URLhaus blacklist
+         ↓
+SeceoKnight Alerts
+    ├─ URLhaus DNS Detections (Rule 100702)
+    └─ 
+         ↓
+SeceoKnight Dashboard & Logs
+```
