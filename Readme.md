@@ -89,6 +89,6 @@ Add this cron (update every 30 minutes):
 0 5 * * * find /var/ossec/etc/lists/urlhaus/backups -name "urlhaus_blacklist.*" -mtime +30 -delete
 ```
 ## This means:
-- ✅ **Updates at:** 00, 30 minutes of every hour (2x per hour = 48 times daily)
-✅ Cleans old backups daily at 5 AM
-✅ Keeps last 30 days of backups
+- ✅ **Updates at: 00, 30 minutes of every hour (2x per hour = 48 times daily)**
+- ✅ **Cleans old backups daily at 5 AM**
+- ✅ **Keeps last 30 days of backups**
