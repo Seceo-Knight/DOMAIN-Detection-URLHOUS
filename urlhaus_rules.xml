@@ -1,0 +1,9 @@
+<!-- URLhaus Malicious Domain Detection -->
+<group name="windows,sysmon,urlhaus">
+  <rule id="100702" level="12">
+    <if_group>sysmon_event_22</if_group>
+    <list field="win.eventdata.queryName" lookup="address_match_key">etc/lists/urlhaus/urlhaus_blacklist</list>
+    <description>URLhaus: DNS query to malicious domain. Domain=$(win.eventdata.queryName) User=$(win.eventdata.user)</description>
+    <group>sysmon_event_22,urlhaus,</group>
+  </rule>
+</group>
