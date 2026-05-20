@@ -19,3 +19,7 @@ SeceoKnight Alerts
          ↓
 SeceoKnight Dashboard & Logs
 ```
+✅ CREATE CORRECT RULES FILE
+```
+sudo nano /var/ossec/etc/rules/urlhaus_rules.xml
+```
