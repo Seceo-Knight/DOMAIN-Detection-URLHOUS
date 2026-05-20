@@ -75,7 +75,19 @@ Wait 30 seconds, then check:
 ```
 tail -30 /var/ossec/etc/lists/urlhaus/update.log
 ```
-
+Should show:
+```
+[2026-05-20 07:30:00] ========== URLhaus Update Started ==========
+[2026-05-20 07:30:10] ✓ Downloaded 45823 lines
+[2026-05-20 07:30:11]   Extracted 12456 unique domains
+[2026-05-20 07:30:11]   Extracted 300 unique IPs
+[2026-05-20 07:30:11] Filtered: 234 domains, 5 IPs (whitelisted)
+[2026-05-20 07:30:12] Final: 12521 lines → 12517 unique entries (removed 4 duplicates)
+[2026-05-20 07:30:12] ✓ Deployed: 12517 unique entries (NO DUPLICATES)
+[2026-05-20 07:30:12] Cleaned: Deleted 0 old backups
+[2026-05-20 07:30:12] Kept: 2 backups in 30-day window
+[2026-05-20 07:30:12] ========== Update Complete ==========
+```
 ## ✅ FIX 3: UPDATE CRONTAB (More Frequent Updates)
 ```
 sudo crontab -e
