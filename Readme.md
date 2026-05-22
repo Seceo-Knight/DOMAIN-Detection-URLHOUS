@@ -88,6 +88,10 @@ Should show:
 [2026-05-20 07:30:12] Kept: 2 backups in 30-day window
 [2026-05-20 07:30:12] ========== Update Complete ==========
 ```
+## ✅ Add rules
+
+Add rules urlhous_rules.xml to path ```/var/ossec/etc/rules/urlhous_rules.xml```
+
 ## ✅ FIX 3: UPDATE CRONTAB (More Frequent Updates)
 ```
 sudo crontab -e
